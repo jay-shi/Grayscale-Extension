@@ -6,14 +6,23 @@
   "author": "Jay Shi",
 
   "browser_action": {
-    "default_icon": "./assets/img/logo.png",
+    "default_icon": {
+      "19": "./assets/img/logo_19.png",
+      "38": "./assets/img/logo_38.png"
+    },
     "default_title": "Gray Filter"
   },
 
+  "icons": {
+    "16": "./assets/img/logo_16.png",
+    "48": "./assets/img/logo_48.png",
+    "128": "./assets/img/logo_128.png"
+  },
+
   "content_scripts": [{
-      "matches": ["<all_urls>"],
+      "matches": ["https://www.youtube.com/*", "https://www.facebook.com/*"],
       "css": ["./src/css/style.css"]
   }],
 
-  "permissions": ["activeTab"]
+  "permissions": ["https://www.youtube.com/*", "https://www.facebook.com/*"]
 }
