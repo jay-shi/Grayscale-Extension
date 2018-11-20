@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Gray Filter",
   "description": "Gray filter for images and videos.",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "Jay Shi",
 
   "browser_action": {
@@ -20,9 +20,9 @@
   },
 
   "content_scripts": [{
-      "matches": ["https://www.youtube.com/*", "https://www.facebook.com/*"],
+      "matches": ["http://*/*", "https://*/*"],
       "css": ["./src/css/style.css"]
   }],
 
-  "permissions": ["https://www.youtube.com/*", "https://www.facebook.com/*"]
+  "permissions": ["http://*/*", "https://*/*"]
 }
