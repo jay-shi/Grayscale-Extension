@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Gray Filter",
   "description": "Gray filter for images and videos.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Jay Shi",
 
   "browser_action": {
